@@ -1,12 +1,16 @@
 <?php
-foreach($_SERVER as $k => $v)
+
+function server($key)
 {
-    $kLower = strtolower($k);
-    $functionName = "get_$kLower";
-    $$functionName = function() {
-        return $v;
-    };
-    // echo '<pre>';
-    // var_dump($kLower,$functionName);
-    // echo '</pre>';
+    return $_SERVER[strtoupper($key)];
+}
+
+function method()
+{
+    return server('request_method');
+}
+
+function uri()
+{
+    return server('request_uri');
 }
