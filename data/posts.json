@@ -1,0 +1,14 @@
+{
+    "liid": 2,
+    "data": [{
+        "title": "Titre du post 1",
+        "body": "<h1>Body du post 1<\/h1><p>Contenu, blablabla...<\/p><script>alert('piratage')</script>",
+        "id": 1,
+        "created_at": 1644928992
+    }, {
+        "title": "Titre du post 1",
+        "body": "<h1>Body du post 1<\/h1><p>Contenu, blablabla...<\/p>",
+        "id": 2,
+        "created_at": 1644929061
+    }]
+}

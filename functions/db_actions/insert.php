@@ -10,9 +10,10 @@
  */
 function insert($table,$object)
 {
-    list($before,$liid) = gtd($table,'data,liid');
+    list($data,$liid) = gtd($table,'data,liid');
     $liid++;
     $object->id = $liid;
-    $before[] = $object;
-    majtd($table,'data,liid',$before,$liid);
+    $object->created_at = time();
+    $data[] = $object;
+    majtd($table,'data,liid',$data,$liid);
 }

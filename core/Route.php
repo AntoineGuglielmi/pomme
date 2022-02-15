@@ -23,7 +23,7 @@ class Route
     {
         if(!realpath("$file.php"))
         {
-            $file = ROOT.$this->method."/$file.php";
+            $file = ROOT.'api/'.$this->method."/$file.php";
         }
         $this->file = $file;
         return $this;

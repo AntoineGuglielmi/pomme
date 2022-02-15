@@ -116,6 +116,7 @@ function select($u_params = [])
 
     if($params->i !== 'stdClass')
     {
+        include ROOT."classes/$params->i.php";
         array_walk($output,function(&$v,$k) use($params)
         {
             $v = unserialize(sprintf(
