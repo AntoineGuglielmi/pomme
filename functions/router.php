@@ -21,7 +21,7 @@ function route($routes,$method,$uri)
         }
     }
     include $file;
-    // header('Access-Control-Allow-Origin: *');
-    // header('Content-Type: application/json');
+    header('Access-Control-Allow-Origin: *');
+    header('Content-Type: application/json');
     call_user_func_array($function,$params);
 }

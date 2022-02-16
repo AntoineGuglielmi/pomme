@@ -25,3 +25,11 @@ function majtd($tableName,$whats,...$maj)
     }
     file_put_contents("data/$tableName.json",json_encode($tableContent));
 }
+
+function result($data)
+{
+    return [
+        'date' => time(),
+        'data' => $data
+    ];
+}

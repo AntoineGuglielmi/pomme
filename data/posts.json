@@ -6,8 +6,8 @@
         "id": 1,
         "created_at": 1644928992
     }, {
-        "title": "Titre du post 1",
-        "body": "<h1>Body du post 1<\/h1><p>Contenu, blablabla...<\/p>",
+        "title": "Titre du post 2",
+        "body": "<h1>Body du post 3<\/h1><p>Contenu aussi, blablablou...<\/p>",
         "id": 2,
         "created_at": 1644929061
     }]
