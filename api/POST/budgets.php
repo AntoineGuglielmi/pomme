@@ -1,7 +1,13 @@
 <?php
 function add_budget()
 {
-    echo '<pre>';
-    var_dump($_POST);
-    echo '</pre>';
+    $budget = new stdClass();
+    foreach($_POST as $k => $v)
+    {
+        $budget->$k = $v;
+    }
+
+    $budget->ordre = getMaxOrdre() + 1;
+    
+    insert('budgets',$budget);
 }

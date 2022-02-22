@@ -33,3 +33,14 @@ function result($data)
         'data' => $data
     ];
 }
+
+function getMaxOrdre()
+{
+    $ordres = select([
+        't' => 'budgets',
+        'c' => 'ordre'
+    ]);
+    return array_reduce($ordres, function($a, $b){
+        return $a ? ($a->ordre > $b->ordre ? $a : $b) : $b;
+    })->ordre;
+}
