@@ -14,6 +14,11 @@ class Routes
         return $this->create_route('GET',$uri);
     }
 
+    public function post($uri)
+    {
+        return $this->create_route('POST',$uri);
+    }
+
     private function create_route($method,$uri)
     {
         return new Route($method,$uri,$this);
