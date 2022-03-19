@@ -1,1 +1,18 @@
-{"liid":2,"data":[{"name":"First budget","saving":"true","limit":"100","id":1,"created_at":1645535282,"ordre":1},{"name":"Second budget","saving":"false","limit":"50","ordre":2,"id":2,"created_at":1645535854}]}
+{
+  "liid": 2,
+  "data": [{
+    "name": "aze",
+    "saving": "false",
+    "limit": "0",
+    "ordre": 1,
+    "id": 1,
+    "created_at": 1645790497
+  }, {
+    "name": "Maxime",
+    "saving": "false",
+    "limit": "100",
+    "ordre": 2,
+    "id": 2,
+    "created_at": 1646490873
+  }]
+}

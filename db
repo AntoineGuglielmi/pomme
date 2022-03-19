@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+include 'config.php';
+include ROOT.'include_functions.php';
+$func = $argv[1];
+$params = array_slice($argv,2);
+
+call_user_func_array($func,$params);
+
+function trunc($table)
+{
+    majtd($table,'liid,data',0,[]);
+}
